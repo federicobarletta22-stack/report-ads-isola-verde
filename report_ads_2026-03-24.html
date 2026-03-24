@@ -7,7 +7,7 @@
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f0; color: #1a1a1a; padding: 2rem; }
-.container { max-width: 800px; margin: 0 auto; }
+.container { max-width: 860px; margin: 0 auto; }
 .header { margin-bottom: 2rem; }
 .header h1 { font-size: 22px; font-weight: 500; }
 .header p { font-size: 13px; color: #666; margin-top: 4px; }
@@ -15,10 +15,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .badge { font-size: 11px; padding: 4px 10px; border-radius: 6px; font-weight: 500; }
 .badge-meta { background: #dbeafe; color: #1e40af; }
 .badge-google { background: #dcfce7; color: #166534; }
-.metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 1.5rem; }
+.metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 1.5rem; }
 .metric { background: #fff; border-radius: 10px; padding: 1rem; border: 0.5px solid #e5e5e5; }
 .metric-label { font-size: 12px; color: #888; margin-bottom: 6px; }
-.metric-value { font-size: 24px; font-weight: 500; }
+.metric-value { font-size: 22px; font-weight: 500; }
 .section-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; }
 .card { background: #fff; border-radius: 10px; padding: 1.25rem; border: 0.5px solid #e5e5e5; }
 .card-title { font-size: 13px; font-weight: 500; margin-bottom: 1rem; display: flex; align-items: center; gap: 8px; }
@@ -29,6 +29,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .row:last-child { border-bottom: none; }
 .row-label { color: #888; }
 .row-value { font-weight: 500; }
+.camp-row { padding: 8px 0; border-bottom: 0.5px solid #f0f0f0; }
+.camp-row:last-child { border-bottom: none; }
+.camp-name { font-size: 12px; font-weight: 500; margin-bottom: 4px; color: #333; }
+.camp-metrics { display: flex; gap: 10px; flex-wrap: wrap; }
+.camp-metrics span { font-size: 11px; background: #f5f5f0; padding: 2px 8px; border-radius: 4px; color: #555; }
 .ai-card { background: #fff; border-radius: 10px; padding: 1.25rem; border: 0.5px solid #e5e5e5; margin-bottom: 1.5rem; }
 .ai-header { display: flex; align-items: center; gap: 10px; margin-bottom: 1rem; }
 .ai-icon { width: 30px; height: 30px; border-radius: 50%; background: #f0eeff; display: flex; align-items: center; justify-content: center; font-size: 14px; }
@@ -59,8 +64,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <div class="metric-value">1111</div>
     </div>
     <div class="metric">
-      <div class="metric-label">Conversioni totali</div>
-      <div class="metric-value">0</div>
+      <div class="metric-label">Reach Meta</div>
+      <div class="metric-value">12343</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Landing Page Views</div>
+      <div class="metric-value">378</div>
     </div>
   </div>
 
@@ -72,7 +81,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <div class="row"><span class="row-label">Click</span><span class="row-value">1111</span></div>
       <div class="row"><span class="row-label">CTR</span><span class="row-value">6.37%</span></div>
       <div class="row"><span class="row-label">CPC</span><span class="row-value">€ 0.06</span></div>
-      <div class="row"><span class="row-label">Conversioni</span><span class="row-value">0</span></div>
+      <div class="row"><span class="row-label">CPM</span><span class="row-value">€ 3.89</span></div>
+      <div class="row"><span class="row-label">Reach</span><span class="row-value">12343</span></div>
+      <div class="row"><span class="row-label">Frequency</span><span class="row-value">1.41</span></div>
+      <div class="row"><span class="row-label">Landing Page Views</span><span class="row-value">378</span></div>
+      <div class="row"><span class="row-label">Add to Cart</span><span class="row-value">1</span></div>
     </div>
     <div class="card">
       <div class="card-title"><span class="dot dot-google"></span> Google Ads</div>
@@ -85,6 +98,46 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     </div>
   </div>
 
+  <div class="card" style="margin-bottom: 1.5rem;">
+    <div class="card-title"><span class="dot dot-meta"></span> Campagne Meta</div>
+    
+  <div class="camp-row">
+    <div class="camp-name">HIVerde | Traffic | DE Coppie | Mar26</div>
+    <div class="camp-metrics">
+      <span>€ 67.93</span>
+      <span>1111 click</span>
+      <span>CTR 6.37%</span>
+      <span>CPM €3.89</span>
+      <span>Reach 12343</span>
+      <span>LPV 378</span>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="card" style="margin-bottom: 1.5rem;">
+    <div class="card-title"><span class="dot dot-google"></span> Campagne Google</div>
+    
+  <div class="camp-row">
+    <div class="camp-name">Campaign #1</div>
+    <div class="camp-metrics">
+      <span>€ 0.00</span>
+      <span>0 click</span>
+      <span>0 conv.</span>
+    </div>
+  </div>
+
+  <div class="camp-row">
+    <div class="camp-name">Brand | Search | IT-DE</div>
+    <div class="camp-metrics">
+      <span>€ 0.00</span>
+      <span>0 click</span>
+      <span>0 conv.</span>
+    </div>
+  </div>
+
+  </div>
+
   <div class="ai-card">
     <div class="ai-header">
       <div class="ai-icon">✦</div>
@@ -93,11 +146,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         <div class="ai-subtitle">Generata da OpenAI · 2026-03-24</div>
       </div>
     </div>
-    <div class="ai-content">1. Punto Positivo: Il CTR del 6.37% è molto buono, indica che gli annunci sono attrattivi e rilevanti per il pubblico.
+    <div class="ai-content">1. Positivo: Il CTR del 6.37% su Meta indica un buon coinvolgimento degli utenti con gli annunci, suggerendo che il messaggio e il target sono appropriati.
 
-2. Attenzione: La spesa su Google Ads è pari a 0€, il che significa che non si sta sfruttando una piattaforma importante per la visibilità.
+2. Attenzione: La spesa per Google è pari a 0€, il che significa che non stai sfruttando questo canale, lasciando potenzialmente clienti in attesa di essere raggiunti.
 
-3. Azione Concreta: Avviare una campagna su Google Ads per ampliare la portata e generare click e conversioni, pianificando un budget iniziale per testare l'efficacia della piattaforma.</div>
+3. Azione Concreta: Inizia a investire almeno un piccolo budget su Google Ads per diversificare le tue fonti di traffico e monitorare eventuali conversioni.</div>
   </div>
 
   <div class="footer">Hotel Isola Verde · Report generato automaticamente</div>
