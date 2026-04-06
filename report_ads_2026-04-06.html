@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ads Report - Hotel Isola Verde</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f0; color: #1a1a1a; padding: 2rem; }
+.container { max-width: 860px; margin: 0 auto; }
+.header { margin-bottom: 2rem; }
+.header h1 { font-size: 22px; font-weight: 500; }
+.header p { font-size: 13px; color: #666; margin-top: 4px; }
+.badges { display: flex; gap: 8px; margin-top: 10px; }
+.badge { font-size: 11px; padding: 4px 10px; border-radius: 6px; font-weight: 500; }
+.badge-meta { background: #dbeafe; color: #1e40af; }
+.badge-google { background: #dcfce7; color: #166534; }
+.badge-ga4 { background: #fef3c7; color: #92400e; }
+.metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 1.5rem; }
+.metric { background: #fff; border-radius: 10px; padding: 1rem; border: 0.5px solid #e5e5e5; }
+.metric-label { font-size: 12px; color: #888; margin-bottom: 6px; }
+.metric-value { font-size: 22px; font-weight: 500; }
+.metric-sub { font-size: 11px; color: #aaa; margin-top: 4px; }
+.section-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; }
+.card { background: #fff; border-radius: 10px; padding: 1.25rem; border: 0.5px solid #e5e5e5; margin-bottom: 1rem; }
+.card-title { font-size: 13px; font-weight: 500; margin-bottom: 1rem; display: flex; align-items: center; gap: 8px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; }
+.dot-meta { background: #3b82f6; }
+.dot-google { background: #22c55e; }
+.dot-ga4 { background: #f59e0b; }
+.row { display: flex; justify-content: space-between; font-size: 13px; padding: 5px 0; border-bottom: 0.5px solid #f0f0f0; }
+.row:last-child { border-bottom: none; }
+.row-label { color: #888; }
+.row-value { font-weight: 500; font-size: 12px; }
+.camp-row { padding: 8px 0; border-bottom: 0.5px solid #f0f0f0; }
+.camp-row:last-child { border-bottom: none; }
+.camp-name { font-size: 12px; font-weight: 500; margin-bottom: 4px; color: #333; }
+.camp-metrics { display: flex; gap: 10px; flex-wrap: wrap; }
+.camp-metrics span { font-size: 11px; background: #f5f5f0; padding: 2px 8px; border-radius: 4px; color: #555; }
+.ai-card { background: #fff; border-radius: 10px; padding: 1.25rem; border: 0.5px solid #e5e5e5; margin-bottom: 1.5rem; }
+.ai-header { display: flex; align-items: center; gap: 10px; margin-bottom: 1rem; }
+.ai-icon { width: 30px; height: 30px; border-radius: 50%; background: #f0eeff; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+.ai-title { font-size: 14px; font-weight: 500; }
+.ai-subtitle { font-size: 12px; color: #888; }
+.ai-content { font-size: 13px; line-height: 1.7; color: #333; white-space: pre-wrap; }
+.footer { font-size: 12px; color: #aaa; text-align: center; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>Ads Performance Report</h1>
+    <p>2026-04-06 &nbsp;·&nbsp; Ultimi 7 giorni &nbsp;·&nbsp; Hotel Isola Verde</p>
+    <div class="badges">
+      <span class="badge badge-meta">Meta Ads</span>
+      <span class="badge badge-google">Google Ads</span>
+      <span class="badge badge-ga4">GA4</span>
+    </div>
+  </div>
+
+  <div class="metrics">
+    <div class="metric">
+      <div class="metric-label">Spesa totale</div>
+      <div class="metric-value">€ 31.94</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Sessioni GA4</div>
+      <div class="metric-value">529</div>
+      <div class="metric-sub">2705 pagine viste</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Revenue GA4</div>
+      <div class="metric-value">€ 684.92</div>
+      <div class="metric-sub">4 conversioni</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Reach Meta</div>
+      <div class="metric-value">5638</div>
+      <div class="metric-sub">393 landing views</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Revenue GA4</div>
+      <div class="metric-value">€ 684.92</div>
+      <div class="metric-sub">4 conv. · 0.76% CVR</div>
+    </div>
+  </div>
+
+  <div class="section-grid">
+    <div class="card">
+      <div class="card-title"><span class="dot dot-meta"></span> Meta Ads</div>
+      <div class="row"><span class="row-label">Spesa</span><span class="row-value">€ 31.94</span></div>
+      <div class="row"><span class="row-label">Impressioni</span><span class="row-value">6517</span></div>
+      <div class="row"><span class="row-label">Click</span><span class="row-value">485</span></div>
+      <div class="row"><span class="row-label">CTR</span><span class="row-value">7.44%</span></div>
+      <div class="row"><span class="row-label">CPC</span><span class="row-value">€ 0.07</span></div>
+      <div class="row"><span class="row-label">CPM</span><span class="row-value">€ 4.90</span></div>
+      <div class="row"><span class="row-label">Reach</span><span class="row-value">5638</span></div>
+      <div class="row"><span class="row-label">Frequency</span><span class="row-value">1.16</span></div>
+      <div class="row"><span class="row-label">Landing Page Views</span><span class="row-value">393</span></div>
+      <div class="row"><span class="row-label">Add to Cart</span><span class="row-value">0</span></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="dot dot-google"></span> Google Ads</div>
+      <div class="row"><span class="row-label">Spesa</span><span class="row-value">€ 0.00</span></div>
+      <div class="row"><span class="row-label">Impressioni</span><span class="row-value">0</span></div>
+      <div class="row"><span class="row-label">Click</span><span class="row-value">0</span></div>
+      <div class="row"><span class="row-label">CTR</span><span class="row-value">0%</span></div>
+      <div class="row"><span class="row-label">CPC</span><span class="row-value">€ 0</span></div>
+      <div class="row"><span class="row-label">Conversioni</span><span class="row-value">0</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="dot dot-ga4"></span> GA4 — Sessioni per canale</div>
+    
+  <div class="row">
+    <span class="row-label">Organic Search</span>
+    <span class="row-value">201 sess. · 10.9% bounce · 24m 38s · Conv. 0.50% · €357.40</span>
+  </div>
+
+  <div class="row">
+    <span class="row-label">Referral</span>
+    <span class="row-value">126 sess. · 7.9% bounce · 3m 37s · Conv. 1.59% · €154.56</span>
+  </div>
+
+  <div class="row">
+    <span class="row-label">Direct</span>
+    <span class="row-value">115 sess. · 7.8% bounce · 3m 34s · Conv. 0.87% · €172.96</span>
+  </div>
+
+  <div class="row">
+    <span class="row-label">Paid Social</span>
+    <span class="row-value">73 sess. · 9.6% bounce · 0m 45s · Conv. 0.00% · €0.00</span>
+  </div>
+
+  <div class="row">
+    <span class="row-label">Organic Social</span>
+    <span class="row-value">8 sess. · 25.0% bounce · 1m 57s · Conv. 0.00% · €0.00</span>
+  </div>
+
+  <div class="row">
+    <span class="row-label">Unassigned</span>
+    <span class="row-value">6 sess. · 83.3% bounce · 12m 48s · Conv. 0.00% · €0.00</span>
+  </div>
+
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="dot dot-meta"></span> Campagne Meta</div>
+    
+  <div class="camp-row">
+    <div class="camp-name">HIVerde | Traffic | DE Coppie | Mar26</div>
+    <div class="camp-metrics">
+      <span>€ 31.94</span>
+      <span>485 click</span>
+      <span>CTR 7.44%</span>
+      <span>CPM €4.90</span>
+      <span>Reach 5638</span>
+      <span>LPV 393</span>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="dot dot-google"></span> Campagne Google</div>
+    
+  <div class="camp-row">
+    <div class="camp-name">Campaign #1</div>
+    <div class="camp-metrics">
+      <span>€ 0.00</span>
+      <span>0 click</span>
+      <span>0 conv.</span>
+    </div>
+  </div>
+
+  <div class="camp-row">
+    <div class="camp-name">Brand | Search | IT-DE</div>
+    <div class="camp-metrics">
+      <span>€ 0.00</span>
+      <span>0 click</span>
+      <span>0 conv.</span>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="ai-card">
+    <div class="ai-header">
+      <div class="ai-icon">✦</div>
+      <div>
+        <div class="ai-title">Analisi AI</div>
+        <div class="ai-subtitle">Generata da OpenAI · 2026-04-06</div>
+      </div>
+    </div>
+    <div class="ai-content">### 1. PERFORMANCE META
+Il CTR del 7.44% è eccellente per il settore hospitality, che tipicamente oscilla tra il 1% e il 3%. Il CPC di 0.07 EUR è molto competitivo, suggerendo una spesa efficiente per ogni click. Il CPM di 4.90 EUR indica un costo contenuto per mille impressioni, anche qui ben allineato al mercato degli hotel di lusso. La reach di 5638 con una frequenza appropriata mostra che stai raggiungendo un buon numero di utenti senza sovraesporli. In sintesi, i valori sono molto positivi e suggeriscono una campagna pubblicitaria ben ottimizzata.
+
+### 2. QUALITA DEL TRAFFICO
+Il tasso di click-through è buono, ma la netta discesa tra il numero di click e le landing page views (da 485 a 393) indica un problema nell'attrattività della pagina di destinazione o nel contenuto dell'annuncio. Inoltre, non ci sono stati "add to cart", il che suggerisce che gli utenti che visitano la landing page non sono motivati a proseguire nel processo di prenotazione. Qui si perde traffico critico, potenzialmente a causa di un'interfaccia poco user-friendly o di un'offerta non convincente.
+
+### 3. GA4 E CONVERSIONI
+Il tasso di conversione del 0.76% è basso, indicando che la maggior parte degli utenti che atterrano sul sito non completa una prenotazione. Il revenue totale di 684.92 EUR con sole 4 conversioni implica che ogni prenotazione è di alto valore, ma il numero di convertiti deve crescere. Analizzando i canali, si denota che Meta sta generando il traffico, ma rispetto alle conversioni totali, è evidente la necessità di ottimizzare il funnel.
+
+### 4. AZIONE CONCRETA
+Raccomando di focalizzarti sull'ottimizzazione della landing page. Considera di effettuare un A/B test su elementi chiave come la call to action e le offerte presentate. Aggiungi elementi di prova sociale (recensioni o testimonianze recenti) e semplifica il processo di prenotazione. Inoltre, rafforza la comunicazione con remarketing per coloro che hanno visitato la pagina ma non hanno convertito. Monitorizza attentamente il tasso di conversione post-ottimizzazione per valutare l’impatto.</div>
+  </div>
+
+  <div class="footer">Hotel Isola Verde · Report generato automaticamente</div>
+</div>
+</body>
+</html>
